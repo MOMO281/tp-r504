@@ -2,11 +2,17 @@
 import fonctions as f
 
 def puissance():
-    a = int(input("Saisir le premier nombre : "))
-    b = int(input("Saisir le second nombre (puissance) : "))
+
+	try:
     
-    res = f.puissance(a, b)
+		a = int(input("Saisir le premier nombre : "))
+		b = int(input("Saisir le second nombre (puissance) : "))
     
-    print(f, a, "élevé à la puissance", b, " vaut ",res )
+		res = f.puissance(a, b)
+    
+		print(f, a, "élevé à la puissance", b, " vaut ",res )
+
+	except TypeError as e:
+		print(f"Erreur : ", e)
 
 puissance()
