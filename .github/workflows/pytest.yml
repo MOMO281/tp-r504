@@ -10,4 +10,4 @@ jobs:
       - name: Installation pytest
         run: pip3 install pytest
       - name: Run tests
-        run: pytest /home/ur.univ-rouen.fr/moreamo2/tp-r504/TP1/test.py
+        run: pytest TP1/test.py
