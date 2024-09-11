@@ -6,7 +6,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Set up Python for Demo
-        uses: actions/setup-python@4
+        uses: actions/setup-python@v4
       - name: Installation pytest
         run: pip3 install pytest
       - name: Run tests
