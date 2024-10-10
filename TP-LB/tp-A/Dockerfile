@@ -1,2 +1,6 @@
+# Utiliser l'image NGINX la plus récente
 FROM nginx:latest
-COPY ./index.html /usr/share/nginx/html/index.html
+
+# Copier le fichier de configuration dans le dossier de configuration NGINX
+COPY default.conf /etc/nginx/conf.d/
+
