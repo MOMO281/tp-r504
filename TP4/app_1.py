@@ -18,6 +18,8 @@ cursor = conn.cursor()
 
 @app.route('/')
 def index():
+    conn = mysql.connector.connect(**db_config)
+    cursor = conn.cursor() 
     # Sample query
     query = "SELECT * FROM myTable"
     cursor.execute(query)
